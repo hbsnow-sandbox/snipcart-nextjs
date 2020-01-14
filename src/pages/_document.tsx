@@ -42,8 +42,11 @@ class BaseDocument extends Document {
             }
 
             html,
-            body {
-              min-height: 100%;
+            body,
+            #__next {
+              height: 100%;
+              margin: 0;
+              padding: 0;
             }
 
             body {
@@ -51,6 +54,10 @@ class BaseDocument extends Document {
               background-color: ${Color.Background};
               -webkit-text-size-adjust: 100%;
               -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+
+            p {
+              margin: 0 0 1rem;
             }
           `}
         />

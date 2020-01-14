@@ -10,6 +10,7 @@ type IndexProps = {
 }
 
 const root = css({
+  minHeight: '100%',
   display: 'flex',
   flexDirection: 'column',
 })
@@ -18,7 +19,7 @@ const Index = (props: IndexProps): JSX.Element => {
   return (
     <div css={root}>
       <Header />
-      <main className="main">
+      <main css={{ flex: '1 1 auto' }}>
         <ProductList products={props.products} />
       </main>
       <Footer />
