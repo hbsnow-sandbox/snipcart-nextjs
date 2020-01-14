@@ -1,6 +1,6 @@
-import Container from './Container'
+import Container from '../shared/Container'
 import { css, SerializedStyles } from '@emotion/core'
-import { Color } from '../../styles/variables'
+import { Color } from '../styles/variables'
 
 const Footer: React.FC<FooterProps> = ({ cssProps }) => {
   const footer = css(

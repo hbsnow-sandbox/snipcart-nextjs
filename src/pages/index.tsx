@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/common/Header'
-import ProductList from '../components/product/ProductList'
-import { Product } from '../components/product/ProductListItem'
-import Footer from '../components/common/Footer'
+import Header from '../App/Header'
+import ProductList from '../shared/ProductList'
+import { Product } from '../shared/ProductListItem'
+import Footer from '../App/Footer'
 import { css } from '@emotion/core'
 
 type IndexProps = {

@@ -1,5 +1,5 @@
 import ProductListItem, { Product } from './ProductListItem'
-import Container from '../common/Container'
+import Container from './Container'
 import { css } from '@emotion/core'
 
 const ProductList: React.FC<ProductListProps> = ({ products }) => {

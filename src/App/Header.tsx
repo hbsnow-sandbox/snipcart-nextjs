@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { SerializedStyles, css } from '@emotion/core'
-import { Color } from '../../styles/variables'
-import Container from './Container'
+import { Color } from '../styles/variables'
+import Container from '../shared/Container'
 
 const Header: React.FC<HeaderProps> = ({ cssProps }) => {
   const header = css(

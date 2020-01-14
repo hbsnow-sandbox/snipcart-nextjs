@@ -1,5 +1,6 @@
 import { withRouter, Router } from 'next/router'
 import { css } from '@emotion/core'
+import ProductButton from './ProductButton'
 
 const productItem = css({
   border: '1px solid #ddd',
@@ -20,16 +21,9 @@ const ProductListItem: React.FC<ProductListItemProps> = ({
         <div>
           <p>{product.description}</p>
           <p>${product.price.toFixed(2)}</p>
-          <button
-            className="snipcart-add-item"
-            data-item-id={product.id}
-            data-item-name={product.name}
-            data-item-price={product.price}
-            data-item-url={router.pathname}
-            data-item-image={product.image}
-          >
+          <ProductButton product={product} url={router.pathname}>
             Add to cart
-          </button>
+          </ProductButton>
         </div>
       </div>
     </div>
